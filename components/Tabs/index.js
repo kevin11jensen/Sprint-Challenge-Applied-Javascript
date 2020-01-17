@@ -10,42 +10,50 @@
 
 //grab the topics div
 const tabs = document.querySelector
-('.topics')
+('.topics');
 
 //send get request
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
-  .then((response) => {
+  .then(response => {
     // handle success
     // console.log(response);
     //create variable holding returned data
-    const topics = response.data.topics;
+    const topicsArray = response.data.topics;
     //check to see whats in topics
     // console.log(topics);
     //cycle through each topic and apply it to the "createTabs" function
-    topics.forEach(topic => {
-        createTabs(topic);
+    topicsArray.forEach(topic => {
+        tabs.appendChild(createTabs(topic));
     })
   })
-  .catch((error) => {
+  .catch(error => {
     // handle error
     console.log('error!', error);
   })
 
-  //create a function that for the tabs
+  //create a function that makes the tabs
 function createTabs(topic) {
-    //create div
+    //create elements
     const tabDiv = document.createElement('div');
+    const tabTopic = document.createElement('div');
+    const tabTitle = document.createElement('span');
+
+    tabTitle.textContent = topic;
 
     //add classlist
     tabDiv.classList.add('tab');
+    tabTopic.classList.add('topics');
+    tabTitle.classList.add('title');
 
-    //add textcontent from topic
-    tabDiv.textContent = topic;
 
     //add everything to .topics div
     tabs.appendChild(tabDiv);
+    tabDiv.appendChild(tabTopic);
+    tabTopic.appendChild(tabTitle);
 
-    return tabs;
+
+
+    return tabDiv;
       
   }
   
