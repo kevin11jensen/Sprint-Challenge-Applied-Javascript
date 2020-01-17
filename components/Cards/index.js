@@ -18,3 +18,14 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
+// Send an HTTP GET request to the following address: https://lambda-times-backend.herokuapp.com/articles
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles').then(response => {
+    let cardInfro = response.data.articles;
+    console.log(response.data.articles);
+})
+
+// You will be creating a component for each 'article' in the list.
+
+//articles in list: javascript, bootstrap, technology, jquery, node
+
