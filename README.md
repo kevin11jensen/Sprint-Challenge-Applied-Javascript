@@ -46,7 +46,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is a component?
 
-    
+    A component is a re-usable peice of code/logic that we can re-use to keep our website looking the same throughout.
 
 ### Git Set up
 
