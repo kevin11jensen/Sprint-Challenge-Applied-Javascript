@@ -30,11 +30,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
-    The DOM stand for Document Object Model. The DOM is a tree like structure that represents the organizational structure of your HTML elements using nodes.
+    The DOM stands for Document Object Model. The DOM is a tree like structure that represents the organizational structure of your HTML elements using nodes.
 
 2. What is an event?
 
-    An event is something that happens when a user visits the page. An event can be just about anything from mouse clicks to key presses. There are tons of events that can happen on a webpage.
+    An event is an action a user does when visiting the page. An event can be just about anything from mouse clicks to key presses. Any input device that a browser can read can be used to trigger events in the DOM. There are tons of events that can happen on a webpage.
 
 3. What is an event listener?
 
@@ -46,7 +46,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is a component?
 
-    A component is a re-usable peice of code/logic that we can re-use to keep our website looking the same throughout.
+    A component is a re-usable peice of code/logic that we can re-use to keep our website looking the same throughout. We use smaller components to build out large scale applications.
 
 ### Git Set up
 
