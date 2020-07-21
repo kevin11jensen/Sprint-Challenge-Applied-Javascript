@@ -30,7 +30,7 @@ function Header() {
     //give elements text content
     title.textContent = 'Lambda Times';
     temp.textContent = '98';
-    date.textContent = 'SMARCH 28, 2019';
+    date.textContent = 'MARCH 28, 2019';
 
     //make sure it looks right in console
     // console.log(header);
